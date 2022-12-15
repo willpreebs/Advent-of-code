@@ -1,0 +1,18 @@
+use std::fs::File;
+use std::io::BufReader;
+use std::io::BufRead;
+
+pub fn fun(filename : &str) {
+    
+    let f = File::open(filename).expect("failed to open file");
+
+    let reader = BufReader::new(f);
+
+    for line in reader.lines() {
+
+        let line = line.expect("failed");
+
+
+    }
+
+}
