@@ -1,7 +1,6 @@
 use std::fs::File;
 use std::io::BufReader;
 use std::io::BufRead;
-use std::num;
 // letters are at line index 1, 5, 9, ...
 /*
 
@@ -52,7 +51,6 @@ pub fn find_tops_of_stacks2(filename : &str) -> String {
             let a : char = line.chars().nth(i).unwrap();
             if a != ' ' {
                 stacks[(i - 1) / 4].push(a.to_string());
-                //println!("found char: {} in stack: {}", a, (i - 1) / 4);
             }
             i += 4;
         }
@@ -77,7 +75,6 @@ pub fn find_tops_of_stacks2(filename : &str) -> String {
 
         // go to beginning of move instructions
         if !line.starts_with("m") {
-            println!("{}", &line);
             continue;
         }
         

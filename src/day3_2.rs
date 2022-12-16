@@ -43,19 +43,6 @@ pub fn group_item_priorities(filename : &str) -> i32 {
     return sum;
 }
 
-fn get_sum_priorities(letters : &Vec<String>) -> i32 {
-
-    let mut sum = 0;
-
-    for str in letters.iter() {
-        sum += get_priority(str);
-    }
-
-    return sum;
-
-
-}
-
 fn get_priority(letter : &String) -> i32 {
     
     assert!(letter.chars().count() == 1);
@@ -118,23 +105,6 @@ fn test_halves() {
 }
 
 #[test]
-fn test_common() {
-
-    let line = "vJrwpWtwJgWrhcsFMMfFFhFp";
-
-    let expected_first = "vJrwpWtwJgWr";
-    let expected_second = "hcsFMMfFFhFp";
-
-    let first_half = &line[0..line.len()/2];
-    let second_half = &line[line.len()/2..line.len()];
-
-    let expected = vec![String::from("p")];
-
-    //assert_eq!(expected, get_shared_letters(first_half, second_half));
-
-}
-
-#[test]
 fn test_get_priority() {
 
 
@@ -145,15 +115,6 @@ fn test_get_priority() {
 
 
     assert_eq!(expected, get_priority(&input));
-
-}
-
-fn test_get_sum_priority() {
-
-    let vector = vec![String::from("p")];
-    let expected = 16;
-
-    assert_eq!(expected, get_sum_priorities(&vector));
 
 }
 

@@ -19,9 +19,6 @@ pub fn day6main(filename : &str) -> usize {
 
 fn detect_unique_sequence(s: &String) -> usize {
 
-
-
-
     for (i,c) in s.chars().enumerate().skip(4) {
 
         let arr : [char; 4] = [s.chars().nth(i-3).unwrap(), s.chars().nth(i-2).unwrap(), s.chars().nth(i-1).unwrap(), c];

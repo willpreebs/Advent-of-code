@@ -106,9 +106,6 @@ fn test_common() {
 
     let line = "vJrwpWtwJgWrhcsFMMfFFhFp";
 
-    let expected_first = "vJrwpWtwJgWr";
-    let expected_second = "hcsFMMfFFhFp";
-
     let first_half = &line[0..line.len()/2];
     let second_half = &line[line.len()/2..line.len()];
 
@@ -131,7 +128,7 @@ fn test_get_priority() {
     assert_eq!(expected, get_priority(&input));
 
 }
-
+#[test]
 fn test_get_sum_priority() {
 
     let vector = vec![String::from("p")];

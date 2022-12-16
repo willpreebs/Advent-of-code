@@ -109,12 +109,12 @@ fn line_score(str_vec : &Vec<&str>) -> i32 {
 }
 
 
-#[test]
-fn test_score() {
+// #[test]
+// fn test_score() {
 
-    let expected = 15;
-    assert_eq!(expected, get_score2("src/day2.txt"));
+//     let expected = 15;
+//     assert_eq!(expected, get_score2("src/day2.txt"));
 
-}
+// }
 
 

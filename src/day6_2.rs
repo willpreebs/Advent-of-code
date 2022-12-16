@@ -19,11 +19,9 @@ pub fn day6main2(filename : &str) -> usize {
 fn detect_unique_sequence(s: &String) -> usize {
 
 
-    for (i,c) in s.chars().enumerate().skip(14) {
+    for (i,_c) in s.chars().enumerate().skip(14) {
 
         let arr : Vec<char> = (0..14).map(|x| s.chars().nth(i-x).unwrap()).collect();
-        println!("Array {:?}", arr);
-        
         if no_repeats(arr) {
             return i + 1;
         }

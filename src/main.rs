@@ -10,6 +10,8 @@ mod day5;
 mod day5_2;
 mod day6;
 mod day6_2;
+mod day7;
+mod day7_2;
 
 fn main() {
     
@@ -49,5 +51,10 @@ fn main() {
     let sequence_index2 = day6_2::day6main2("src/day6.txt");
     println!("Day 6 part 2 result: {}", sequence_index2);
 
+    let directory_sum = day7::directory_sum("src/day7.txt");
+    println!("Day 7 result: {}", directory_sum);
+
+    let directory_sum = day7_2::directory_sum("src/day7.txt");
+    println!("Day 7 part 2 result: {}", directory_sum);
 
 }

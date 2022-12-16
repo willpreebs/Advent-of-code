@@ -39,7 +39,7 @@ pub fn total_top_three(filename: &str) -> i32 {
 
 }
 
-fn insert_elem(mut arr: [i32; 3], elem : i32) -> [i32; 3] {
+fn insert_elem(arr: [i32; 3], elem : i32) -> [i32; 3] {
 
     let mut ret_array : [i32; 3] = [arr[0], arr[1], arr[2]];
 

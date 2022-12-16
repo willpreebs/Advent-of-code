@@ -76,7 +76,6 @@ pub fn find_tops_of_stacks(filename : &str) -> String {
 
         // go to beginning of move instructions
         if !line.starts_with("m") {
-            println!("{}", &line);
             continue;
         }
         
