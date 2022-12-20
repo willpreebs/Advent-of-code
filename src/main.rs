@@ -12,6 +12,10 @@ mod day6;
 mod day6_2;
 mod day7;
 mod day7_2;
+mod day8;
+mod day8_2;
+mod day9;
+mod day9_2;
 
 fn main() {
     
@@ -56,5 +60,17 @@ fn main() {
 
     let directory_sum = day7_2::directory_sum("src/day7.txt");
     println!("Day 7 part 2 result: {}", directory_sum);
+
+    let num_visible_trees = day8::visible_trees("src/day8.txt");
+    println!("Day 8 result: {}", num_visible_trees);
+
+    let max_scenic_score = day8_2::max_scenic_score("src/day8.txt");
+    println!("Day 8 part 2 result: {}", max_scenic_score);
+
+    let num_tail_positions = day9::num_tail_positions("src/day9.txt");
+    println!("Day 9 result: {}", num_tail_positions);
+
+    let num_tail_positions2 = day9_2::num_tail_positions("src/day9.txt");
+    println!("Day 9 part 2 result: {}", num_tail_positions2);
 
 }

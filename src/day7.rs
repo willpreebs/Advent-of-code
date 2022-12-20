@@ -67,8 +67,6 @@ pub fn directory_sum(filename: &str) -> u32 {
             }
         }
     }
-    let current_free_space = 70000000 - path_hash.get("/").unwrap();
-    // we need to find a directory with size closest to the diff of 30000000 and current free space
 
     return path_hash.values().filter(|&&x| x <= 100000).sum();
 
